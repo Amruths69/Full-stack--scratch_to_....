@@ -1,2 +1,2 @@
 # Full-stack--scratch_to_....
-I am going to upload all of my works from scratch in full stack development right inside this repo!
+I am going to upload all of my works from scratch to advance topics and projects in full stack development.
