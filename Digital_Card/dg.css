@@ -1,0 +1,31 @@
+
+.img{
+    width:150px;
+    
+
+}
+.cont{
+    
+    display:flex;
+    width:500px;
+    padding:20px;
+   border-radius: 5%;
+    margin: 20px auto;
+    background:peachpuff;
+    transition: 0.5s;
+    color:#2b2839;
+    justify-content: space-around;
+    border-bottom: 20px solid #2b2839;
+
+}
+
+body{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cont:hover{
+    background:lightblue;
+    transform:scale(1.1);
+    box-shadow: 0 20px 20px gray;
+}
+
