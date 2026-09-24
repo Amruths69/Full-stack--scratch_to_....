@@ -1,0 +1,84 @@
+<html>
+    <head>
+       
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="particles"></div>
+        <div class="hh">
+            <h1 id="id">Welcome Yaasika(Keep goin dumbo)!!</h1>
+            <img src="yaa.jpg" id="h12">
+            <h3 class="fb">Just Relax and take deep breathes!</h3>
+            <h2 class="fb">Everything would be fine</h2>
+        </div>
+        <div class="gif1">
+            <h1 class="p">If your feeli sad!</h1>
+            <h3 class="p">Then have this hug </h3>
+            <div class="gif11"></div>
+        </div>
+        <div>
+            <h1 id="p1">If you feel happy!</h1>
+            <h3 class="p">Come on duhhh lets dance for whatever reason! </h3>
+            <div class="gif12"></div>
+        </div>
+        <div>
+            <h1 id="p1">If you feel Enthuiastic!</h1>
+            <h3 class="p">Nothing just feel it</h3>
+            <div class="gif13"></div>
+        </div>
+        <div>
+            <h1 id="p1">If you feel down!</h1>
+            <h3 class="p">1st, this will be the most probable reason your here</h3>
+            <h2>I love you paaaapu 💓</h2>
+            <h3>Its just another bad day which will pass</h3>
+            <div class="gif14"></div>
+        </div>
+         <div>
+            <h1 id="p1">This bonus is for you!</h1>
+            
+            
+            <h3>Muaaaaah😘</h3>
+            <div class="gif15"></div>
+        </div>
+        <div class="heart">♥</div>
+        <footer id="footer">
+            <p>Done by Amu!, for only you......</p>
+            <p>For looking into all his projects, checkout his <a href="https://github.com/Amruths69" target="_blank">Github</a>, <a href="https://www.linkedin.com/in/amruth-s-57886736a/" target="_blank">Linkedin</a>.......</p>
+        </footer>
+        <script>
+
+const particles = document.getElementById("particles");
+
+for(let i = 0; i < 40; i++){
+
+    const heart = document.createElement("div");
+
+    heart.classList.add("heart");
+
+    heart.innerHTML = "♥";
+
+    // Random horizontal position
+    heart.style.left = Math.random() * 100 + "%";
+
+    // Random size
+    heart.style.fontSize =
+        (10 + Math.random() * 20) + "px";
+
+    // Random speed
+    heart.style.animationDuration =
+        (5 + Math.random() * 8) + "s";
+
+    // Random starting delay
+    heart.style.animationDelay =
+        Math.random() * 5 + "s";
+
+    particles.appendChild(heart);
+}
+
+</script>
+    </body>
+</html>
