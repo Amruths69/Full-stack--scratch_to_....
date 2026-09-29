@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+    font-size: large;
+    margin:10px;
+    color:black;
+
+}
+button{
+    background-color: black;
+    color:white;
+    display:inline-block;
+    width:100px;
+    height:70px;
+    margin:20px auto ;
+    padding:10px;
+
+}
+#w4{
+    display:block;
+
+
+}
+p{
+    display: inline;
+    margin:10px
+}
