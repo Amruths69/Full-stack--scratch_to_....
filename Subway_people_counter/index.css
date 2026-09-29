@@ -1,0 +1,28 @@
+
+body{
+    background-image: url("sub.jpg");
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
+    text-align: center;
+    color:white;
+    display: block;
+}
+button{
+    margin:20px auto;
+    padding:10px;
+    width:300px;
+    height:50px;
+    display:block;
+    
+    
+}
+#btn{
+    background-color: red;
+    box-shadow: 5px 5px 10px black;
+    
+}
+#s-btn{
+    background-color: green;
+    box-shadow: 5px 5px 10px black;
+}
