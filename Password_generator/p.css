@@ -1,0 +1,162 @@
+body {
+    font-family: "Space Grotesk", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    text-align: center;
+
+    background:
+        radial-gradient(ellipse at top, rgba(19, 78, 74, 0.8) 0%, transparent 55%),
+        linear-gradient(160deg, #0A0F1C 0%, #0F2A2E 50%, #134E4A 100%);
+    background-attachment: fixed;
+
+    color: #ECFDF5;
+    text-shadow:
+    0 0 2px #6EE7B7,
+    0 0 5px #34D399,
+    0 0 19px #059669,
+    2px 2px 0px #022C22;
+    font-size: 30px;
+}
+
+.btn {
+    background: linear-gradient(135deg, #0F2A2E, #134E4A);
+    color: #6EE7B7;
+
+    padding: 16px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+
+    border: 1px solid rgba(110, 231, 183, 0.4);
+    border-bottom: 3px solid #34D399;
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    text-shadow:
+        0 0 5px rgba(110, 231, 183, 0.3);
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease,
+        color 0.25s ease;
+        animation: a 2s infinite alternate;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #34D399, #6EE7B7);
+    color: #052E2B;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 6px 18px rgba(52, 211, 153, 0.25),
+        0 0 8px rgba(110, 231, 183, 0.25);
+}
+
+.btn:active {
+    transform: translateY(0) scale(0.98);
+}
+
+#bb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+
+    width: 100%;
+    max-width: 700px;
+
+    margin: 24px auto;
+}
+
+#btn2,
+#btn3 {
+    display: inline-block;
+    text-align: center;
+}
+@keyframes a{
+    0%{
+        box-shadow: 0 0 10px rgba(52, 211, 153, 0.35);
+    }
+    50%{
+        box-shadow: 0 0 20px rgba(52, 211, 153, 0.5);
+    }
+    100%{
+        box-shadow: 0 0 35px rgba(52, 211, 153, 0.65);
+    }
+}
+
+
+/*Design from here are done my AI*/
+/* Background animation container */
+#floating-bg {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Individual floating characters */
+.floating-char {
+    position: absolute;
+    bottom: -50px;
+
+    color: #6EE7B7;
+    opacity: 0;
+
+    font-family: "Space Grotesk", monospace;
+    font-weight: 600;
+
+    text-shadow: 0 0 8px rgba(52, 211, 153, 0.3);
+
+    user-select: none;
+    will-change: transform, opacity;
+
+    animation: floatUp linear infinite;
+}
+
+/* Float upward and rotate */
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.4;
+    }
+
+    80% {
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: translateY(-120vh) rotate(180deg);
+        opacity: 0;
+    }
+}
+
+/* Keep website content above the animation */
+body > h1,
+body > h3,
+body > button,
+body > p {
+    position: relative;
+    z-index: 1;
+}
+
+/* Disable animation for reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .floating-char {
+        display: none;
+    }
+}
