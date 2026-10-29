@@ -1,0 +1,11 @@
+
+{
+  "manifest_version": 3,
+  "name": "My Link Saver",
+  "version": "1.0",
+  "description": "Save links and open them in a new tab",
+  "action": {
+    "default_title": "My Link Saver",
+    "default_popup": "ext.html"
+  }
+}
